@@ -121,7 +121,9 @@ void app_set_configuration(app_configuration *conf) {
 		hw_stop_i2c();
 		app_custom_start();
 #endif
+		app_alternator_start();
 		break;
+		
 
 	default:
 		break;
